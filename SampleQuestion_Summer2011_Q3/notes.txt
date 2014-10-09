@@ -1,0 +1,15 @@
+(i)		no default arguements were provided and too few were passed
+
+(ii)	output is "100" and "14.1421".	100 is correct but 14.1421 is result from base class method. (base method ignores y value)
+(iii)		set the base method to virtual and we call derived method which gives us "17.3205", which is correct	(derived method uses y value)
+		Dyanamic binding means that the function call is bound to appropriate object at runtime; static is same but at compile time
+
+(iv)	"cannot instantiate abstract class"		-reason: no implementation for getDistanceToWaypoint and base method is pure virtual
+
+(v)		compiler doesnt know that pAI will hold an AirAI and so will only allow base AI calls
+
+(vi)	the destructor is called when the method ends. the passed object shares the same memory address as the original, so its destructor corrupts the array
+
+(vii)	
+
+(vii)	"delete" only deletes first element in the array, the rest are left untouched. "delete[]" should have been used to delete all elements
